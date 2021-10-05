@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html>
-<body>
+<head>
 <h2>We're just calculating your score for today...</h2>
+</head>
+<body>
 <p> </p>
-<iframe id="inlineFrameExample"
-    title="Inline Frame Example"
-    width="300"
-    height="200"
-    src="https://enof5n9574pdow3.m.pipedream.net/">
+<p>Please be patient, the human body is complex and deriving your score is not quick or easy.</p>
+<p> </p>
+<iframe id="results"
+    title="Z2H Score"
+    width="800"
+    height="500"
+    src="https://enof5n9574pdow3.m.pipedream.net/" style="border: none;" onload="onLoad()" onerror="onError()">
 </iframe>
-<form name="results" action="https://enof5n9574pdow3.m.pipedream.net/" method="POST" data-netlify="true">
-<p>
-<button type="submit">Click to refresh</button>
-</p>
-</form>
 <form name="Home" action="/index.html" method="POST" data-netlify="true">
 <p>
 <button type="submit">Home</button>
