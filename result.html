@@ -1,7 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
+<form name="Home" action="/index.html" method="POST" data-netlify="true">
+<p>
+<button type="submit">Home</button>
+</p>
+</form>
 <h2>We're just calculating your score for today...</h2>
+<script language="Javascript">
+const iframe = document.querySelector('results');
+iframe.onload = function() {
+  console.log("The iframe is loaded");
+}
+iframe.onerror = function() {
+  console.log("Something wrong happened");
+}
+</script>
 </head>
 <body>
 <p> </p>
@@ -13,10 +27,6 @@
     height="500"
     src="https://enof5n9574pdow3.m.pipedream.net/" style="border: none;" onload="onLoad()" onerror="onError()">
 </iframe>
-<form name="Home" action="/index.html" method="POST" data-netlify="true">
-<p>
-<button type="submit">Home</button>
-</p>
-</form>
+
 </body>
 </html>
