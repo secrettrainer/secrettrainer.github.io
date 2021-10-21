@@ -1,29 +1,44 @@
 <!DOCTYPE html>
 <html>
+<meta name="home" content="width=device-width, initial-scale=1">
 <body>
-<h2>Welcome to Zero 2 Hero.</h2>
-<p> </p>
-<p>Zero 2 Hero is a score between 0 and 100 generated each day based on a combination of your current autonomic response, training status and intrinsic motivation, where 0 would indicate not able to train at all and 100 being you are at your peak for the World Championships.</p>
-<p> </p>
-<p>Your score does not change during the day, so undertaking strenuous or stressful activity prior to your planned training will impact the reliability of your score.</p>
-<p> </p>
-<p>First step is to authorise your Today's Plan account.</p>
-
+<style>
+table, th, td {}
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}
+</style>
+<table class="center" style="width:90%;text-align:center;justify:center">
+<tr>
+<th>Zero 2 Hero</th>
+</tr>
+<tr>
+<td>Zero 2 Hero is a readiness for training score between 0 and 100 generated each day based on a combination of your current autonomic response, training status and intrinsic motivation, where 0 would indicate not able to train at all and 100 being you are at your peak for the World Championships.</td>
+</tr>
+<tr>
+<td>Your score does not change during the day, so undertaking strenuous or stressful activity prior to your planned training will impact the reliability of your score.</td>
+</tr>
+<tr>
+<td>First step is to authorise your Today's Plan account.</td>
+</tr>
+<tr>
+<td>
 <form method="POST" name="login" action="/result.html">
   <p>
     <label>Username: <input type="email" name="username" /></label>   
   </p>
   <p>
-    <label>Password: <input type="password" name="password" /></label>
+    <label> Password:  <input type="password" name="password" /></label>
   </p>
   <p>
     <label>Update my TQR? <input type="checkbox" name="tqr" /></label>
   </p>	 
   <p>
   <button type="submit" formmethod="POST" formaction="https://enof5n9574pdow3.m.pipedream.net/">Authorize</button>
-  <p>  </p>
-<h3>...please wait once authorizing...</h3>
-</p>
-</form>
+</form>  
+  </td>
+</tr> 
+</table>
 </body>
 </html>
